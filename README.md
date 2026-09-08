@@ -1,5 +1,8 @@
 # 🥐 Tamurfood
 
+[![CI](https://github.com/abdullahxDNA/Tamurfood/actions/workflows/ci.yml/badge.svg)](https://github.com/abdullahxDNA/Tamurfood/actions/workflows/ci.yml)
+[![Live Demo](https://img.shields.io/badge/Demo-tamurfood.onrender.com-success?style=flat&logo=render)](https://tamurfood.onrender.com)
+
 **A real-time ordering & instant-delivery app for a neighbourhood bakery** — the shops around Tamurfood order snacks and meals from a live menu, the bakery's own staff deliver in minutes, and a built-in ledger ("Khata") tracks exactly what every shop owes.
 
 A full-stack application deployed for demo/testing, modelling a real bakery's ordering and payment workflows.
@@ -109,7 +112,7 @@ flowchart LR
 | **Database**  | PostgreSQL, Drizzle ORM, Row-Level Security                                              |
 | **Auth**      | Better Auth (phone + password, role-based sessions)                                      |
 | **Real-time** | Server-Sent Events (per-shop + admin streams)                                            |
-| **Infra**     | Supabase (Postgres + Storage), Railway (Docker), monorepo via Bun workspaces             |
+| **Infra**     | Supabase (Postgres + Storage), Render (Docker), monorepo via Bun workspaces              |
 
 ## Architecture highlights
 
@@ -153,7 +156,7 @@ bun dev
 
 ## Deployment
 
-Deployed on **Railway** via Docker: the frontend is built with Vite and served as static files by the Hono server, which also runs database migrations on boot. Postgres and object storage are hosted on **Supabase**.
+Deployed on **Render** via Docker: the frontend is built with Vite and served as static files by the Hono server, which also runs database migrations on boot. Postgres and object storage are hosted on **Supabase**.
 
 ## License
 
